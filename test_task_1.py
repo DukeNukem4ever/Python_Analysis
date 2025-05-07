@@ -1,18 +1,12 @@
 ##### ЧАСТЬ 1 #####
 
+# Элементы вводного списка должны перечисляться через запятую с пробелом!
+
 lis = [int(i) for i in input().split(', ')]
 
 # Задание 1
 
-lis2 = []
-
-for i in lis:
-    if i % 2 == 0:
-        lis2.append(i)
-    else:
-        continue
-
-print("Четные числа: " + str(lis2))
+print("Четные числа: " + str([i for i in lis if i % 2 == 0]))
 
 # Задание 2
 
